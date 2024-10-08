@@ -3,27 +3,43 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 7%;
+  --background: 270 50% 5%;
   --foreground: 0 0% 100%;
-  --card: 0 0% 10%;
+  --card: 270 50% 8%;
   --card-foreground: 0 0% 100%;
-  --popover: 0 0% 7%;
+  --popover: 270 50% 5%;
   --popover-foreground: 0 0% 100%;
   --primary: 265 89% 63%;
   --primary-foreground: 0 0% 100%;
   --secondary: 273 91% 35%;
   --secondary-foreground: 0 0% 100%;
-  --muted: 0 0% 12%;
+  --muted: 270 50% 12%;
   --muted-foreground: 0 0% 64%;
   --accent: 273 68% 50%;
   --accent-foreground: 0 0% 100%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 100%;
-  --border: 0 0% 20%;
-  --input: 0 0% 20%;
+  --border: 270 50% 20%;
+  --input: 270 50% 20%;
   --ring: 265 89% 63%;
 }
 
 body {
-  @apply bg-background text-foreground;
+  @apply bg-background text-foreground min-h-screen;
+}
+
+.container {
+  @apply px-4 mx-auto max-w-7xl;
+}
+
+@media (min-width: 640px) {
+  .container {
+    @apply px-6;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    @apply px-8;
+  }
 }

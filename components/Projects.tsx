@@ -29,12 +29,12 @@ export default function Projects() {
       <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <Card key={index} className="bg-card">
+          <Card key={index} className="bg-card h-full flex flex-col">
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
               <CardDescription>{project.description}</CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex-grow">
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, techIndex) => (
                   <Badge key={techIndex} variant="secondary">{tech}</Badge>
@@ -42,7 +42,7 @@ export default function Projects() {
               </div>
             </CardContent>
             <CardFooter>
-              <Button asChild variant="outline">
+              <Button asChild variant="outline" className="w-full">
                 <a href={project.link} target="_blank" rel="noopener noreferrer">View on GitHub</a>
               </Button>
             </CardFooter>
