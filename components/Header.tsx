@@ -31,7 +31,7 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com/in/lucachu" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+              <a href="www.linkedin.com/in/lucas-gonzález-fiz" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
                 <Linkedin size={24} />
               </a>
             </li>
