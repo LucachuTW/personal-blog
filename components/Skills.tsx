@@ -1,10 +1,9 @@
 import { Badge } from '@/components/ui/badge';
 
 const skills = [
-  'Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'NLTK',
-  'Java', 'Linux', 'Docker', 'Git', 'Machine Learning',
-  'Deep Learning', 'Natural Language Processing', 'Computer Vision',
-  'Data Analysis', 'Shell Scripting', 'SQL'
+  'Python', 'Scikit-learn',
+  'Java', 'Linux', 'Git', 'Machine Learning', 'mpi', 'Azure',
+  'Data Analysis', 'SQL', 'Cuda', 'Vim'
 ];
 
 export default function Skills() {
